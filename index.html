@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AutoVision AI | Vehicle Video Analysis Platform</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <div class="container header-container">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>SmartTraffic AI</h1>
+                        <!-- <span>Vehicle Video Analysis</span> -->
+                    </div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="mainNav">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#classes">Vehicle Classes</a></li>
+                        <li><a href="#workflow">Workflow</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <button class="cta-button secondary">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Sign In
+                        </button>
+                        <!-- <button class="cta-button" id="startTrialBtn">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
+                    </button> -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i>
+                        SmartTraffic AI
+                    </div>
+                    <h1>Transform Vehicle Videos into <span>Actionable
+                            Insights</span></h1>
+                    <p>SmartTraffic AI automatically detects, classifies, and
+                        analyzes vehicles in video footage. Save time, reduce
+                        costs, and gain valuable traffic insights with our
+                        advanced AI platform.</p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">90%</div>
+                            <div class="stat-label">Time Saved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5</div>
+                            <div class="stat-label">Vehicle Classes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">1:1</div>
+                            <div class="stat-label">Processing Ratio</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">96%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="cta-button" id="heroTrialBtn">
+                            <i class="fas fa-play-circle"></i>
+                            Try Live Demo
+                        </button>
+                        <button class="cta-button secondary">
+                            <i class="fas fa-calendar-alt"></i>
+                            Book a Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <img
+                            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                            alt="Vehicle Video Analysis Dashboard"
+                            class="demo-video">
+                        <div class="video-overlay" id="playVideoBtn">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Key Benefits</div>
+                    <h2 class="section-title">Why Choose SmartTraffic AI?</h2>
+                    <p class="section-description">Our platform delivers
+                        unparalleled efficiency in vehicle video analysis,
+                        transforming hours of manual work into automated
+                        insights.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card" id="feature1">
+                        <div class="feature-icon time">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Time Saving</h3>
+                        <p>Eliminates manual video review and vehicle counting.
+                            Process hours of footage in minutes instead of days
+                            with our automated AI analysis.</p>
+                        <div class="feature-stats">
+                            <div class="feature-stat">90%</div>
+                            <div class="feature-label">Reduction in analysis
+                                time</div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" id="feature2">
+                        <div class="feature-icon effort">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Effort Reduction</h3>
+                        <p>Intersection videos are analyzed in a single run. All
+                            vehicle classifications are extracted
+                            simultaneously—no repetitive manual work
+                            required.</p>
+                        <div class="feature-stats">
+                            <div class="feature-stat">1-Click</div>
+                            <div class="feature-label">Complete analysis
+                                process</div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" id="feature3">
+                        <div class="feature-icon cost">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Cost Efficiency</h3>
+                        <p>Significantly reduces operational and manpower costs.
+                            Automate what would normally require multiple
+                            analysts working for hours.</p>
+                        <div class="feature-stats">
+                            <div class="feature-stat">70%</div>
+                            <div class="feature-label">Reduction in analysis
+                                costs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicle Classes Section - 
+         Enhanced Design with Light Imag
+         -->
+        <section class="vehicle-classes" id="classes">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Vehicle Categories</div>
+                    <h2 class="section-title">5- Comprehensive Vehicle
+                        Classifications</h2>
+                    <p class="section-description">Our AI accurately identifies
+                        and classifies vehicles into 5 distinct categories,
+                        providing detailed insights for traffic analysis, urban
+                        planning, and transportation studies.</p>
+                </div>
+
+                <div class="classes-wrapper">
+                    <div class="classes-grid-container">
+                        <div class="classes-grid">
+                            <!-- Passenger Cars -->
+                            <div class="class-item" id="class1">
+                                <div class="class-icon">
+                                    <i class="fas fa-car-side"></i>
+                                </div>
+                                <div class="class-text">
+                                    <h4>Passenger Cars</h4>
+                                    <p>Sedans, hatchbacks, coupes</p>
+                                    <span class="class-badge">Most Common</span>
+                                </div>
+                            </div>
+
+                            <!-- Buses -->
+                            <div class="class-item" id="class3">
+                                <div class="class-icon bus">
+                                    <i class="fas fa-bus"></i>
+                                </div>
+                                <div class="class-text">
+                                    <h4>Buses</h4>
+                                    <p>City buses, coaches, school buses</p>
+                                </div>
+                            </div>
+
+                            <!-- Trucks -->
+                            <div class="class-item" id="class4">
+                                <div class="class-icon truck">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="class-text">
+                                    <h4>Trucks</h4>
+                                    <p>Semis, trailers, freight trucks</p>
+                                    <span class="class-badge">Heavy
+                                        Vehicle</span>
+                                </div>
+                            </div>
+
+                            <!-- Motorcycles -->
+                            <div class="class-item" id="class5">
+                                <div class="class-icon motorcycle">
+                                    <i class="fas fa-motorcycle"></i>
+                                </div>
+                                <div class="class-text">
+                                    <h4>Motorcycles</h4>
+                                    <p>Bikes, scooters, mopeds</p>
+                                </div>
+                            </div>
+
+                            <!-- Person/Pedestrian -->
+                            <div class="class-item" id="class6">
+                                <div class="class-icon person">
+                                    <i class="fas fa-walking"></i>
+                                </div>
+                                <div class="class-text">
+                                    <h4>Pedestrians</h4>
+                                    <p>People walking, crossing streets</p>
+                                    <span class="class-badge">New</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stats Summary -->
+                        <div class="classes-stats">
+                            <div class="stat-card">
+                                <div class="stat-number">98.7%</div>
+                                <div class="stat-label">Detection Accuracy</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">6</div>
+                                <div class="stat-label">Vehicle Classes</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Real-time Analysis</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="classes-visual">
+                        <div class="image-wrapper">
+                            <img src="imgs/class.jpg"
+                                alt="Vehicle Classification Dashboard"
+                                class="main-image">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI Detection Active</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stats Cards -->
+                        <div class="floating-card card-1">
+                            <i class="fas fa-car"></i>
+                            <span>24 vehicles detected</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-walking"></i>
+                            <span>3 pedestrians</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-chart-line"></i>
+                            <span>98% accuracy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section class="workflow" id="workflow">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Simple Process</div>
+                    <h2 class="section-title">4-Step Analysis Workflow</h2>
+                    <p class="section-description">Get actionable insights from
+                        your vehicle videos in just four straightforward steps
+                        with our intuitive platform.</p>
+                </div>
+
+                <div class="workflow-container">
+                    <div class="workflow-steps">
+                        <div class="step" id="step1">
+                            <div class="step-number">1</div>
+                            <h3>Select Video</h3>
+                            <p>Choose the traffic video from your device or
+                                cloud storage. Supports all major video
+                                formats.</p>
+                        </div>
+
+                        <div class="step" id="step2">
+                            <div class="step-number">2</div>
+                            <h3>Play & Preview</h3>
+                            <p>Play the video directly from your device. Video
+                                upload is optional and can be skipped for
+                                preview.</p>
+                        </div>
+
+                        <div class="step" id="step3">
+                            <div class="step-number">3</div>
+                            <h3>Configure Analysis</h3>
+                            <p>Choose from available analysis settings, vehicle
+                                classes, and reporting options.</p>
+                        </div>
+
+                        <div class="step" id="step4">
+                            <div class="step-number">4</div>
+                            <h3>Get Results</h3>
+                            <p>View comprehensive analysis results, export data
+                                in multiple formats, and generate reports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-time Processing -->
+        <section class="real-time" id="demo">
+            <div class="container real-time-container">
+                <div class="real-time-content">
+                    <h2>Real-Time Processing Speed</h2>
+                    <p>Experience unprecedented analysis speed. Our platform
+                        processes video in approximately the same duration as
+                        the original video length, delivering near real-time
+                        insights.</p>
+
+                    <div class="speed-visual">
+                        <div class="speed-line"></div>
+                        <div class="speed-indicator">
+                            <div class="speed-value">1:1</div>
+                            <div class="speed-label">Processing Ratio</div>
+                        </div>
+                    </div>
+
+                    <div class="speed-comparison">
+                        <div class="comparison-item">
+                            <div class="comparison-label">Traditional
+                                Analysis</div>
+                            <div class="comparison-value">8-10x</div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="comparison-label">AutoVision AI</div>
+                            <div class="comparison-value">1x</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="classes-visual">
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Real-time Analysis Dashboard">
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Start Analyzing Vehicle Videos
+                        Smarter</h2>
+                    <p class="cta-description">Join hundreds of transportation
+                        departments, researchers, and companies using AutoVision
+                        AI to extract valuable insights from vehicle video
+                        footage.</p>
+
+                    <div class="cta-buttons">
+                        <button class="cta-button">
+                            <i class="fas fa-rocket"></i>
+                            Start Free Trial
+                        </button>
+                        <a href="#" class="cta-button secondary ">
+                            <i class="fas fa-play-circle"></i>
+                            Watch Full Demo
+                        </a>
+                    </div>
+
+                    <!-- <p style="margin-top: 40px; color: var(--medium-gray); font-size: 14px;">
+                    <i class="fas fa-check-circle" style="color: var(--secondary);"></i> No credit card required • 14-day free trial • Cancel anytime
+                </p> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple Footer -->
+        <footer>
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>SmartTraffic AI</h1>
+                            <span>Vehicle Video Analysis</span>
+                        </div>
+                    </a>
+                </div>
+
+                <p class="footer-description">
+                    Advanced AI-powered platform for automated vehicle
+                    detection, classification, and analysis in video footage.
+                    Transform your traffic analysis workflow with cutting-edge
+                    technology.
+                </p>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+
+                <!-- <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#classes">Vehicle Classes</a>
+                <a href="#workflow">Workflow</a>
+                <a href="#demo">Demo</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+            </div> -->
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        &copy; 2026 SmartTraffic AI. All rights reserved |
+                        Developed by <strong>Smart Traffic Computer
+                            Systems</strong>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Video Modal -->
+        <div class="video-modal" id="videoModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal" title="Close (ESC)">
+                    <i class="fas fa-times"></i>
+                </span>
+                <video class="modal-video" controls id="demoVideo"
+                    preload="metadata">
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-traffic-on-a-bridge-41551-large.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
